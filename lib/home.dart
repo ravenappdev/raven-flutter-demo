@@ -140,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage>
           ));
     }
 
-    RavenSdk.updateStatus(notificationId, Status.CLICKED);
+    RavenSdk.updateStatus(notificationId, Status.DELIVERED);
   }
 
   void _onMessageOpenHandler(RemoteMessage message) {
