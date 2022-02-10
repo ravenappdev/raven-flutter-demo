@@ -38,7 +38,7 @@ Note : To run this app on iOS, please follow additional steps [here](https://fir
 
 Replace `appId` and `apiKey` in the `main.dart` file with your own Raven App ID and API Key which you can get from the Raven Console in the Settings tab.
 
-![App ID and API Key](../../.gitbook/assets/4D2puGmTm6xTmWVE2cVy5a4mBtMRN3Tjj1mAIx-O8VLlZ7-LRxkqFLIuvUE2fsbYIPKIYvSHONbNqQviP0ipG9kDqfE6-4LTJBSwIyeJCjNgCDXST9X14YDXx0WLLzyOYPwtGlbo.jpg)
+![App ID and API Key](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MG-HQd2A2Z9XgtUEjJF%2Fuploads%2FgH3n1ibwRkMtP6LkNleO%2F4D2puGmTm6xTmWVE2cVy5a4mBtMRN3Tjj1mAIx-O8VLlZ7-LRxkqFLIuvUE2fsbYIPKIYvSHONbNqQviP0ipG9kDqfE6-4LTJBSwIyeJCjNgCDXST9X14YDXx0WLLzyOYPwtGlbo.jpg?alt=media&token=9dfdfc9a-d805-49df-8907-c5eaa1eaaa9f)
 
 ### Step 3.
 
@@ -46,17 +46,18 @@ Change event name to your Raven push event name and user parameters to the detai
 
 If you haven’t created a Raven Push event in the Raven console yet check our [docs here](flutter-sdk.md#step-4.-test).
 
-![Event Name and User details](../../.gitbook/assets/PrKfJyraYkFc\_gfG5E5MmlisshlYPT1M4ysZlVEIRFKg5VMMXb3GTom5Lo5R3gLPSQNYgjAPIRkqYSCm7e8RarWuAjkhod-v0euLMs0HxlIN3SAViDC8qlnJEB\_zd2cx\_rO3ySPf.jpg)
+![Event Name and User details](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MG-HQd2A2Z9XgtUEjJF%2Fuploads%2FEOns9r7Jwgn4eXIhl3f9%2FPrKfJyraYkFc_gfG5E5MmlisshlYPT1M4ysZlVEIRFKg5VMMXb3GTom5Lo5R3gLPSQNYgjAPIRkqYSCm7e8RarWuAjkhod-v0euLMs0HxlIN3SAViDC8qlnJEB_zd2cx_rO3ySPf.jpg?alt=media&token=557d83a6-9ab5-439e-a42b-3e4703e9b370)
 
 ### Step 4.&#x20;
 
 After completing the above steps, run the “`flutter run`” command to run this sample app.
 
-Once the app runs the following screen appears.\
+Once the app runs the following screen appears.
 
-
-![](https://lh5.googleusercontent.com/tURwtA5asTvQZugpBk0GgZdeT8WOvFFK3h-GbVyz-ti2abDkqcCyKTqv944M2VAivm0QTHXwFyS-sqbMPFD8iqzg70vhAkOxnaqdH3FEpTM4XCbdxxMKBRbLjmDeUxq7V1RmpTHu)                     ![](https://lh6.googleusercontent.com/-UraLtzSngzmpTG\_GLxIEO18Jr5j2cEayGN017aiGERZClVRHyEjTngJGFNkXVzCsCZcn4\_OuFSlRjAIY0gej4\_3viVcksPCZ4MxIlrB8PVoJiFhlU442DvOiX-ssIyvPYYJfz8D)
-
+<p float="left">
+  <img src="https://lh5.googleusercontent.com/tURwtA5asTvQZugpBk0GgZdeT8WOvFFK3h-GbVyz-ti2abDkqcCyKTqv944M2VAivm0QTHXwFyS-sqbMPFD8iqzg70vhAkOxnaqdH3FEpTM4XCbdxxMKBRbLjmDeUxq7V1RmpTHu" width="100" />
+  <img src="https://lh6.googleusercontent.com/-UraLtzSngzmpTG_GLxIEO18Jr5j2cEayGN017aiGERZClVRHyEjTngJGFNkXVzCsCZcn4_OuFSlRjAIY0gej4_3viVcksPCZ4MxIlrB8PVoJiFhlU442DvOiX-ssIyvPYYJfz8D" width="100" /> 
+</p>
 
 
 * Set User button creates/updates the user provided in the Raven app.
@@ -65,6 +66,6 @@ Once the app runs the following screen appears.\
 
 You can also directly send a notification to a device from the Raven console. Go to your event and click the send button of your push event and then use the FCM token of the device to send the event.
 
-![](../../.gitbook/assets/YCOBTw4ptA\_zBKGMlLRvJ8R5Iwi7IOZHwuorDF2jkzaEYm878JSdScFHuGMrkNzPS2EFwKDCVT9ULN6UiGM7zhcCmrVfF0jz77qp1zlkH2QaT5lPTnwH5SXOrIl2d4IA52vy1O-B.jpg)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MG-HQd2A2Z9XgtUEjJF%2Fuploads%2FtLnp4A5V83IZInimsSRf%2FYCOBTw4ptA_zBKGMlLRvJ8R5Iwi7IOZHwuorDF2jkzaEYm878JSdScFHuGMrkNzPS2EFwKDCVT9ULN6UiGM7zhcCmrVfF0jz77qp1zlkH2QaT5lPTnwH5SXOrIl2d4IA52vy1O-B.jpg?alt=media&token=4311d574-512a-4566-a4a4-a8e89b976624)
 
-![](../../.gitbook/assets/T0hzVfhJKvMLiPvOK0YFHXL7q37kM6RmCpAMYXpMzNF1sVKXWPbVcgqYalEoLShluCAcKlCGfyd5FKhfFIid0UFKfQDTwpUWROIXA9gyxZbf7DCSdm4c\_DG9tX19vHOS-F7cy379.jpg)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MG-HQd2A2Z9XgtUEjJF%2Fuploads%2Fk4lpHOF5upSaEjxhzsVX%2FT0hzVfhJKvMLiPvOK0YFHXL7q37kM6RmCpAMYXpMzNF1sVKXWPbVcgqYalEoLShluCAcKlCGfyd5FKhfFIid0UFKfQDTwpUWROIXA9gyxZbf7DCSdm4c_DG9tX19vHOS-F7cy379.jpg?alt=media&token=712a08fd-7ea5-4225-adb3-8d595d658f83)
