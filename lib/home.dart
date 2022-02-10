@@ -20,11 +20,14 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage>
-    implements RavenResponseCallback {
-  String userID = "akshay-test-user-2";
-  String userMobile = "9999999999";
-  String userEmail = "example@gmail.com";
+class _MyHomePageState extends State<MyHomePage> implements RavenResponseCallback {
+  String eventName = "Your Raven Push Event Name";
+  
+  String userID = "user id";
+  String userMobile = "user mobile";
+  String userEmail = "user email";
+  
+
   String successTitle = "Success";
   String successBody = "Operation perfomed successfully";
   String errTitle = "Error";
@@ -54,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   void sendMessage() async {
-    const eventName = "Flutter Raven";
     try {
       await RavenSdk.sendMessage(eventName, userID, this);
       _showDialog(successTitle, successTitle);
@@ -190,7 +192,7 @@ class _MyHomePageState extends State<MyHomePage>
       setState(() {
         this.token = token ?? "";
       });
-      print("token ============= > " + token!);
+      print("Token ============= > " + token!);
     });
   }
 
@@ -205,7 +207,7 @@ class _MyHomePageState extends State<MyHomePage>
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Text(
-              'FCM token = ' + token,
+              ' FCM token = ' + token,
             ),
             OutlinedButton(onPressed: setUser, child: const Text("Set User")),
             OutlinedButton(
@@ -227,8 +229,8 @@ class _MyHomePageState extends State<MyHomePage>
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: showNotification,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Send Local Notification',
+        child: const Icon(Icons.message),
       ),
     );
   }

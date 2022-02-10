@@ -3,6 +3,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:raven_flutter_sdk/raven_flutter_sdk.dart';
+import 'package:raven_flutter_test/firebase_options.dart';
 import 'package:raven_flutter_test/home.dart';
 
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
@@ -13,8 +14,8 @@ const AndroidNotificationChannel channel = AndroidNotificationChannel(
   playSound: true,
 );
 
-const appId = "cb333d18-2f0d-45ff-aced-1d96a57f96d3";
-const apiKey = "slqbr2doJPRdVNO5Bm/4rV8MXPsnvDLCcnRVTGr/Yp8=";
+const appId = "Your Raven App Id";
+const apiKey = "Your Raven Api Key";
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
@@ -30,7 +31,10 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   await RavenSdk.initialize(appId, apiKey);
 
   await flutterLocalNotificationsPlugin
@@ -68,12 +72,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Raven Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(
-          title: 'Flutter Demo Home Page', appId: appId, apiKey: apiKey),
+          title: 'Raven Flutter Demo Page', appId: appId, apiKey: apiKey),
     );
   }
 }
