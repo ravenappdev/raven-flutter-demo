@@ -285,9 +285,9 @@ packages:
   raven_flutter_sdk:
     dependency: "direct main"
     description:
-      name: raven_flutter_sdk
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "../raven_flutter_sdk"
+      relative: true
+    source: path
     version: "0.0.1"
   retrofit:
     dependency: transitive

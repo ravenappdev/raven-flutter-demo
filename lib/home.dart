@@ -192,7 +192,7 @@ class _MyHomePageState extends State<MyHomePage> implements RavenResponseCallbac
       setState(() {
         this.token = token ?? "";
       });
-      print("token ============= > " + token!);
+      print("Token ============= > " + token!);
     });
   }
 
@@ -207,7 +207,7 @@ class _MyHomePageState extends State<MyHomePage> implements RavenResponseCallbac
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Text(
-              'FCM token = ' + token,
+              ' FCM token = ' + token,
             ),
             OutlinedButton(onPressed: setUser, child: const Text("Set User")),
             OutlinedButton(
@@ -229,8 +229,8 @@ class _MyHomePageState extends State<MyHomePage> implements RavenResponseCallbac
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: showNotification,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Send Local Notification',
+        child: const Icon(Icons.message),
       ),
     );
   }
